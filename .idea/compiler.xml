@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="HelloItsMe" />
         <module name="HelloWorld" />
+        <module name="MarioLess" />
       </profile>
     </annotationProcessing>
   </component>

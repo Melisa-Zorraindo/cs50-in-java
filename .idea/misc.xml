@@ -6,6 +6,10 @@
       <list>
         <option value="$PROJECT_DIR$/HelloWorld/pom.xml" />
         <option value="$PROJECT_DIR$/HelloItsMe/pom.xml" />
+        <option value="$PROJECT_DIR$/pset1/HelloWorld/pom.xml" />
+        <option value="$PROJECT_DIR$/pset1/HelloItsMe/pom.xml" />
+        <option value="$PROJECT_DIR$/MarioLess/pom.xml" />
+        <option value="$PROJECT_DIR$/pset1/MarioLess/pom.xml" />
       </list>
     </option>
   </component>
