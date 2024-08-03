@@ -10,19 +10,25 @@ public class Pyramid {
     private int promptForHeight() {
         System.out.print("Greetings! How tall do you want your pyramid to be?\n");
         try (Scanner inputHeight = new Scanner(System.in)) {
-            int height;
+            int height = 0;
+            boolean validInput = false;
 
-            while(true) {
-                if(inputHeight.hasNextInt()) {
-                    height = inputHeight.nextInt();
-                    if(height > 0) {
-                        break;
-                    } else {
-                        System.out.println("Sorry, I cannot make that pyramid. Enter a whole number greater than zero\n");
-                    }
+            while (!validInput) {
+                String input = inputHeight.nextLine().trim();
+
+                if (input.isEmpty()) {
+                    System.out.println("Please enter a value.");
                 } else {
-                    System.out.println("Please enter a number\n");
-                    inputHeight.next();
+                    try {
+                        height = Integer.parseInt(input);
+                        if (height >= 1 && height <= 8) {
+                            validInput = true;
+                        } else {
+                            System.out.println("Please enter a number between one and eight.");
+                        }
+                    } catch (NumberFormatException e) {
+                        System.out.println("Please enter an integer between one and eight.");
+                    }
                 }
             }
             return height;
@@ -36,7 +42,7 @@ public class Pyramid {
         for (int i = 0; i < h; i++) {
             pyramidBuilder.append(generateBlanks(h - i - 1));
             pyramidBuilder.append(generateBricks(i + 1) );
-            pyramidBuilder.append(generateBlanks(3));
+            pyramidBuilder.append(generateBlanks(2));
             pyramidBuilder.append(generateBricks(i + 1) );
             pyramidBuilder.append("\n");
         }
