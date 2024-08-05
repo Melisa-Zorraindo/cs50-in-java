@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="HelloItsMe" />
         <module name="MarioMore" />
+        <module name="Credit" />
         <module name="Cash" />
         <module name="HelloWorld" />
         <module name="MarioLess" />
