@@ -5,11 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.example</groupId>
-        <artifactId>pset1</artifactId>
+        <artifactId>pset2</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>MarioMore</artifactId>
+    <artifactId>Scrabble</artifactId>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
