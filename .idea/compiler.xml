@@ -9,6 +9,7 @@
         <module name="HelloItsMe" />
         <module name="MarioMore" />
         <module name="Credit" />
+        <module name="Readability" />
         <module name="MarioLess" />
         <module name="Cash" />
         <module name="HelloWorld" />
