@@ -10,6 +10,7 @@
         <module name="MarioMore" />
         <module name="Credit" />
         <module name="Readability" />
+        <module name="Caesar" />
         <module name="MarioLess" />
         <module name="Cash" />
         <module name="HelloWorld" />
